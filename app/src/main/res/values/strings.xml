@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ComposeNewsCatcher</string>
+
+    //Content description
+    <string name="cont_desc_selected_nav_bar_home">Home icon</string>
+    <string name="cont_desc_selected_nav_bar_saved">Saved articles icon</string>
+
+    //Headers
+    <string name="header_home">News Catcher</string>
+</resources>
