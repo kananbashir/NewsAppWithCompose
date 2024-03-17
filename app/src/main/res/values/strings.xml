@@ -4,7 +4,25 @@
     //Content description
     <string name="cont_desc_selected_nav_bar_home">Home icon</string>
     <string name="cont_desc_selected_nav_bar_saved">Saved articles icon</string>
+    <string name="cont_desc_headline_article">Headline article</string>
 
     //Headers
     <string name="header_home">News Catcher</string>
+
+    //Texts
+    <string name="text_headline_topic_news">News</string>
+    <string name="search_bar_placeHolder">Search…</string>
+    <string name="text_read_more">Read more…</string>
+
+    //Placeholder texts
+    <string name="placeholder_text_no_topic">No topic</string>
+    <string name="placeholder_text_no_title">No title</string>
+    <string name="placeholder_text_no_publish_date">No date</string>
+    <string name="placeholder_text_no_author">No author</string>
+    <string name="placeholder_text_no_excerpt">No excerpt</string>
+    <string name="placeholder_text_no_summary">No summary</string>
+
+    //Article details dropdown menu
+    <string name="text_save">Save</string>
+    <string name="text_share">Share</string>
 </resources>
