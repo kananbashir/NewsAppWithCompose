@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ComposeNewsCatcher</string>
+
+    //Content description
+    <string name="cont_desc_selected_nav_bar_home">Home icon</string>
+    <string name="cont_desc_selected_nav_bar_saved">Saved articles icon</string>
+    <string name="cont_desc_headline_article">Headline article</string>
+
+    //Headers
+    <string name="header_home">News Catcher</string>
+
+    //Texts
+    <string name="text_headline_topic_news">Haberler</string>
+    <string name="search_bar_placeHolder">Ara…</string>
+    <string name="text_read_more">Daha fazıa…</string>
+
+    //Placeholder texts
+    <string name="placeholder_text_no_topic">Konu yok</string>
+    <string name="placeholder_text_no_title">Başlık yok</string>
+    <string name="placeholder_text_no_publish_date">Tarih yok</string>
+    <string name="placeholder_text_no_author">Yazar yok</string>
+    <string name="placeholder_text_no_excerpt">Alıntı yok</string>
+    <string name="placeholder_text_no_summary">Özet yok</string>
+
+    //Article details dropdown menu
+    <string name="text_save">Kaydet</string>
+    <string name="text_share">Paylaş</string>
+</resources>

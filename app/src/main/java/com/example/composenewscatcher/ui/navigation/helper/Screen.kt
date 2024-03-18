@@ -1,6 +1,6 @@
 package com.example.composenewscatcher.ui.navigation.helper
 
-import com.example.composenewscatcher.ui.navigation.util.constant.NavigationRouteConstants
+import com.example.composenewscatcher.util.constant.NavigationRouteConstants
 
 
 sealed class Screen(val route: String) {

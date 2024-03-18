@@ -50,7 +50,6 @@ android {
 }
 
 dependencies {
-
     val roomVersion = "2.5.2"
     val daggerHiltVersion = "2.44"
     val coroutinesVersion = "1.7.3"
@@ -61,6 +60,7 @@ dependencies {
     val extendedIconsVersion = "1.6.3"
     val coilVersion = "2.6.0"
     val dataStoreVersion = "1.0.0"
+    val appcompatVersion = "1.6.1"
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
@@ -111,4 +111,7 @@ dependencies {
 
     //DataStore
     implementation("androidx.datastore:datastore-preferences:$dataStoreVersion")
+
+    //Appcompat
+    implementation("androidx.appcompat:appcompat:$appcompatVersion")
 }

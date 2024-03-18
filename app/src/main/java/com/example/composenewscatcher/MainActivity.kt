@@ -10,6 +10,8 @@ import androidx.navigation.compose.rememberNavController
 import com.example.composenewscatcher.ui.navigation.SetupNavGraph
 import com.example.composenewscatcher.ui.screen.SharedViewModel
 import com.example.composenewscatcher.ui.screen.home.HomeViewModel
+import com.example.composenewscatcher.ui.screen.language.LanguageViewModel
+import com.example.composenewscatcher.ui.screen.saved.SavedViewModel
 import com.example.composenewscatcher.ui.theme.ComposeNewsCatcherTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -21,31 +23,19 @@ class MainActivity : ComponentActivity() {
             ComposeNewsCatcherTheme {
                 val navController = rememberNavController()
                 val homeViewModel: HomeViewModel = viewModel()
+                val savedViewModel: SavedViewModel = viewModel()
+                val languageViewModel: LanguageViewModel = viewModel()
                 val sharedViewModel: SharedViewModel = viewModel()
-//                val language = sharedViewModel.preferredLanguage.collectAsState(initial = "xx")
-//                val coroutineScope = rememberCoroutineScope()
-
-//                coroutineScope.launch {
-//                    homeViewModel.shouldRequestNewArticles.collect {
-//                        if (it) {
-//                            homeViewModel.onHomeScreenEvent(
-//                                HomeScreenEvent.FetchLatestArticles(language.value)
-//                            )
-//                        } else {
-//                            homeViewModel.onHomeScreenEvent(
-//                                HomeScreenEvent.GetCachedArticles
-//                            )
-//                        }
-//                    }
-//                }
-
 
                 SetupNavGraph(
                     modifier = Modifier
                         .fillMaxSize(),
                     navController = navController,
                     homeViewModel = homeViewModel,
-                    sharedViewModel = sharedViewModel
+                    savedViewModel = savedViewModel,
+                    sharedViewModel = sharedViewModel,
+                    onAppScreenEvent = sharedViewModel::onSharedScreenEvent,
+                    onLanguageScreenEvent = languageViewModel::onLanguageScreenEvent
                 )
             }
         }

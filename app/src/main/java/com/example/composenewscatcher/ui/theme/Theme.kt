@@ -8,42 +8,32 @@ import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Color.Companion.LightGray
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Color.White,
-    background = Color.White,
-    secondary = MediumGray,
-    tertiary = LightGray,
-    onPrimary = Color.Black,
-    onSecondary = Color.Black,
-    secondaryContainer = SandGray,
-    onSecondaryContainer = MediumHardGray,
-    surface = Color.White
+    primary = Color.Black,
+    background = Color.Black,
+    secondary = SilverGray,
+    tertiary = CadetGray,
+    onPrimary = Color.White,
+    onSecondary = Color.White,
+    secondaryContainer = TimberwolfGray,
+    onSecondaryContainer = SilverGray,
+    surface = Color.Black
 )
 
 private val LightColorScheme = lightColorScheme(
     primary = Color.White,
     onPrimary = Color.Black,
     background = Color.White,
-    secondary = MediumGray,
+    secondary = SilverGray,
     onSecondary = Color.Black,
-    secondaryContainer = SandGray,
-    onSecondaryContainer = MediumHardGray,
-    tertiary = LightGray,
+    secondaryContainer = TimberwolfGray,
+    onSecondaryContainer = SilverGray,
+    tertiary = CadetGray,
     surface = Color.White
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
 )
 
 @Composable
@@ -62,7 +52,7 @@ fun ComposeNewsCatcherTheme(
         SideEffect {
             val window = (view.context as Activity).window
             window.statusBarColor = colorScheme.primary.toArgb()
-            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = darkTheme
+            WindowCompat.getInsetsController(window, view).isAppearanceLightStatusBars = !darkTheme
         }
     }
 
